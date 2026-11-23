@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="Country accounting: completed work, competitor feature lists, technical analysis, price position and market opportunities for OctaBiz. English and Persian.">
+<meta property="og:title" content="Country Accounting Board Report">
+<meta property="og:description" content="Completed work, competitor feature lists, technical analysis, price position and market opportunities. English and Persian.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d6670'/%3E%3Cpath d='M9 22V10h3v12zm5 0v-8h3v8zm5 0v-5h3v5z' fill='white'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Country Accounting Board Report</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;600;800&display=swap">
+<style>
+/* Layout: one reading column per language (English / Persian, switched by #fa). Achievements as checked lists, prices drawn to one scale. */
+:root {
+  --bg: #f4f7f8; --surface: #ffffff; --ink: #101b22; --muted: #4f5f69; --rule: #d6dee3; --rule-strong: #9fb0ba;
+  --accent: #0d6670; --accent-soft: #e0eff0; --ok: #1c6d45; --ok-soft: #e1f1e8;
+  --bar: #9fb4bf; --bar-ours: #0d6670;
+  --display: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --fa: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1418; --surface: #141e24; --ink: #e6eef2; --muted: #a2b3bd; --rule: #26343c; --rule-strong: #4a5d68;
+    --accent: #5cc3cc; --accent-soft: #11313a; --ok: #7fd3a6; --ok-soft: #12301f; --bar: #4e6470; --bar-ours: #5cc3cc;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1418; --surface: #141e24; --ink: #e6eef2; --muted: #a2b3bd; --rule: #26343c; --rule-strong: #4a5d68;
+  --accent: #5cc3cc; --accent-soft: #11313a; --ok: #7fd3a6; --ok-soft: #12301f; --bar: #4e6470; --bar-ours: #5cc3cc;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15.5px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.page { max-width: 60rem; margin: 0 auto; padding-block: 1.5rem 4rem; display: flex; flex-direction: column; gap: 1.5rem; }
+article { display: flex; flex-direction: column; gap: 3rem; }
+article[lang="fa"] { font-family: var(--fa); line-height: 1.9; }
+article[lang="fa"] h1, article[lang="fa"] h2, article[lang="fa"] h3 { font-family: var(--fa); letter-spacing: 0; line-height: 1.5; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: clamp(1.9rem, 4.2vw, 2.6rem); font-weight: 700; }
+h2 { font-size: 1.45rem; font-weight: 700; }
+h3 { font-size: 1.05rem; font-weight: 600; }
+article[lang="fa"] h1 { font-weight: 800; }
+p { margin: 0; max-width: 70ch; }
+a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.n { font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
+.eyebrow { font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+article[lang="fa"] .eyebrow { letter-spacing: 0; font-size: .85rem; }
+.muted { color: var(--muted); }
+.small { font-size: .88rem; }
+
+.lang-switch { display: flex; justify-content: flex-end; gap: .4rem; }
+.lang-switch a { min-height: 40px; display: inline-flex; align-items: center; padding: .3rem .9rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: .9rem; }
+.lang-switch a[aria-current="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.lang-switch a.fa { font-family: var(--fa); }
+
+header.cover { display: flex; flex-direction: column; gap: 1rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--rule-strong); }
+.cover .lead { font-size: 1.1rem; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; font-size: .88rem; color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 600; }
+nav.toc { display: flex; flex-wrap: wrap; gap: .4rem; }
+nav.toc a { display: inline-flex; align-items: center; min-height: 40px; padding: .35rem .75rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: .88rem; }
+nav.toc a:hover { border-color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 1.1rem; scroll-margin-top: 1rem; }
+.sec-head { display: flex; flex-direction: column; gap: .35rem; }
+
+/* Completed work */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: .75rem; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .95rem 1.05rem; display: flex; flex-direction: column; gap: .6rem; min-width: 0; }
+.panel h3 { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.chip { display: inline-block; font-size: .74rem; font-weight: 600; padding: .08rem .55rem; border-radius: 999px; white-space: nowrap; background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok); }
+ul.done { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+ul.done li { display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); gap: .1rem .55rem; padding: .55rem 0; border-top: 1px solid var(--rule); font-size: .93rem; }
+ul.done li:first-child { border-top: 0; }
+ul.done li::before { content: ""; width: .8rem; height: .45rem; border-left: 2px solid var(--ok); border-bottom: 2px solid var(--ok); transform: rotate(-45deg); margin-top: .45rem; }
+ul.done li span { min-width: 0; }
+ul.done li b { font-weight: 600; }
+
+/* Product on completion */
+.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+caption { caption-side: bottom; text-align: start; padding: .55rem .8rem; color: var(--muted); font-size: .82rem; border-top: 1px solid var(--rule); }
+th, td { text-align: start; padding: .6rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 0; }
+th { font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--bg); white-space: nowrap; }
+article[lang="fa"] th { letter-spacing: 0; text-transform: none; font-size: .85rem; }
+td.r, th.r { text-align: end; white-space: nowrap; }
+tr.ours td { background: var(--accent-soft); }
+tr.ours td:first-child { font-weight: 600; }
+td:first-child { font-weight: 500; }
+
+/* Price bars: one scale, $0 to $90; always drawn left to right */
+.bars { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 1rem; display: flex; flex-direction: column; gap: 1.2rem; }
+.bar-group { display: flex; flex-direction: column; gap: .45rem; }
+.bar-row { display: grid; grid-template-columns: minmax(8rem, 15rem) minmax(0, 1fr); gap: .75rem; align-items: center; font-size: .88rem; }
+.bar-name { min-width: 0; }
+.bar-track { position: relative; height: 22px; direction: ltr; }
+.bar-fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar-row.ours .bar-fill { background: var(--bar-ours); }
+.bar-row.ours .bar-name { font-weight: 600; }
+.bar-val { position: absolute; top: 50%; transform: translateY(-50%); font-variant-numeric: tabular-nums; font-weight: 600; font-size: .84rem; padding-left: .4rem; white-space: nowrap; }
+.scale { display: grid; grid-template-columns: minmax(8rem, 15rem) minmax(0, 1fr); gap: .75rem; font-size: .76rem; color: var(--muted); }
+.scale-ticks { display: flex; justify-content: space-between; font-variant-numeric: tabular-nums; border-top: 1px solid var(--rule); padding-top: .25rem; direction: ltr; }
+
+/* Advantages and opportunities */
+.list { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .2rem 1.05rem; }
+.item { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .15rem .7rem; padding: .9rem 0; border-top: 1px solid var(--rule); }
+.item:first-child { border-top: 0; }
+.item .k { font-family: var(--display); font-weight: 700; color: var(--accent); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+article[lang="fa"] .item .k { font-family: var(--fa); }
+.item > div { min-width: 0; display: flex; flex-direction: column; gap: .3rem; }
+.item p { color: var(--muted); font-size: .94rem; }
+
+.statement { font-family: var(--display); font-size: 1.2rem; line-height: 1.5; font-weight: 600; padding: 1.1rem 1.2rem; border-inline-start: 4px solid var(--accent); background: var(--surface); border-radius: 0 8px 8px 0; max-width: none; }
+article[lang="fa"] .statement { font-family: var(--fa); border-radius: 8px 0 0 8px; }
+
+figure { margin: 0; display: flex; flex-direction: column; gap: .5rem; }
+.map { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .6rem; overflow-x: auto; direction: ltr; }
+.map svg { display: block; width: 100%; min-width: 34rem; height: auto; }
+figcaption { font-size: .82rem; color: var(--muted); max-width: 70ch; }
+.m-grid { stroke: var(--rule); stroke-width: 1; }
+.m-band { fill: var(--bg); }
+.m-axis { stroke: var(--rule-strong); stroke-width: 1; }
+.m-tick { fill: var(--muted); font-size: 11px; font-family: var(--body); }
+.m-band-label { fill: var(--muted); font-size: 11px; font-family: var(--body); font-weight: 600; letter-spacing: .04em; }
+.m-band-label.fa { font-family: var(--fa); letter-spacing: 0; font-size: 12px; }
+.m-dot { fill: var(--bar); stroke: var(--surface); stroke-width: 2; }
+.m-dot.ours { fill: var(--accent); }
+.m-label { fill: var(--ink); font-size: 12px; font-family: var(--body); font-weight: 500; }
+.m-label.ours { font-weight: 700; fill: var(--accent); }
+
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .75rem; }
+.fig { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .9rem 1rem; display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.fig .v { font-family: var(--display); font-size: 1.7rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; }
+article[lang="fa"] .fig .v { text-align: right; }
+.fig .l { font-size: .86rem; color: var(--muted); }
+
+details.src { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .7rem 1rem; font-size: .85rem; color: var(--muted); }
+details.src summary { cursor: pointer; font-weight: 600; color: var(--ink); min-height: 32px; display: flex; align-items: center; }
+details.src ul { margin: .5rem 0 0; padding-inline-start: 1.1rem; display: flex; flex-direction: column; gap: .25rem; direction: ltr; text-align: left; }
+footer { border-top: 1px solid var(--rule-strong); padding-top: 1rem; font-size: .84rem; color: var(--muted); }
+
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .bar-row, .scale { grid-template-columns: 1fr; gap: .25rem; }
+  .scale > span:first-child { display: none; }
+}
+
+/* Competitor cards, comparison matrix, technical analysis */
+.comp-grid, .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr)); gap: .75rem; align-items: start; }
+.comp, .tech { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .95rem 1.05rem; display: flex; flex-direction: column; gap: .55rem; min-width: 0; }
+.comp h3 { display: flex; justify-content: space-between; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+.comp h3 small { font-family: var(--body); font-size: .76rem; font-weight: 600; color: var(--muted); }
+article[lang="fa"] .comp h3 small { font-family: var(--fa); }
+.comp dl { margin: 0; display: grid; grid-template-columns: 6.2rem minmax(0, 1fr); gap: .45rem .7rem; font-size: .87rem; }
+article[lang="fa"] .comp dl { grid-template-columns: 7rem minmax(0, 1fr); }
+.comp dt { color: var(--muted); font-weight: 600; }
+.comp dd { margin: 0; min-width: 0; }
+.tech ul { margin: 0; padding-inline-start: 1.1rem; display: flex; flex-direction: column; gap: .35rem; font-size: .9rem; }
+.tech ul li::marker { color: var(--accent); }
+.tech.lead-card { border-color: var(--accent); }
+.mx table { min-width: 52rem; font-size: .85rem; }
+.mx td, .mx th { padding: .55rem .65rem; }
+.mx td:first-child { font-weight: 600; min-width: 13rem; }
+.mx td.y { color: var(--ok); font-weight: 600; background: var(--ok-soft); }
+.mx td.nl { color: var(--muted); font-style: italic; }
+article[lang="fa"] .mx td.nl { font-style: normal; }
+ul.plain { margin: 0; padding-inline-start: 1.2rem; display: flex; flex-direction: column; gap: .45rem; max-width: 72ch; }
+ul.plain li::marker { color: var(--accent); }
+@media (max-width: 640px) { .comp dl, article[lang="fa"] .comp dl { grid-template-columns: 1fr; gap: .1rem; } .comp dt { margin-top: .3rem; } }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="page">
+<nav class="lang-switch" aria-label="Language">
+  <a href="#en" id="sw-en" aria-current="true">English</a>
+  <a href="#fa" id="sw-fa" class="fa" lang="fa">فارسی</a>
+</nav>
+
+<!-- ===================== ENGLISH ===================== -->
+<article id="en" lang="en">
+<header class="cover">
+  <span class="eyebrow">Board report · Accounting</span>
+  <h1>Country accounting: completed work and our market position on completion</h1>
+  <p class="lead">This report sets out the accounting work completed between 18 and 23 November 2026, and where OctaBiz will stand against its international competitors once the country accounting project is complete: competitor feature lists, what we have that they don't, a technical analysis of the accounting module, our price position and the market opportunities our pricing opens.</p>
+  <div class="meta"><span><b>Date</b> 23 November 2026</span><span><b>Period</b> 18 to 23 November 2026</span><span><b>Prepared by</b> Product and Engineering</span></div>
+  <nav class="toc" aria-label="Sections">
+    <a href="#en-done">Completed work</a>
+    <a href="#en-product">The product</a>
+    <a href="#en-price">Price position</a>
+    <a href="#en-features">Competitor features</a>
+    <a href="#en-edge">Feature comparison</a>
+    <a href="#en-tech">Technical analysis</a>
+    <a href="#en-adv">Competitive advantages</a>
+    <a href="#en-map">Market position</a>
+    <a href="#en-opp">Market opportunities</a>
+  </nav>
+</header>
+
+<section id="en-done" aria-labelledby="en-h-done">
+  <div class="sec-head"><span class="eyebrow">18 to 23 November 2026</span><h2 id="en-h-done">Completed work</h2></div>
+  <p>In six days we turned OctaBiz's accounting into a single country-neutral core with a paid accounting module per country, and put the foundation of that product line into production.</p>
+  <div class="cols">
+    <div class="panel">
+      <h3>Research and design <span class="chip">Completed</span></h3>
+      <ul class="done">
+        <li><span><b>Oman readiness review</b> of a live Oman account, carried out from an Omani accountant's point of view.</span></li>
+        <li><span><b>Oman accounting infrastructure plan</b>, with every government channel mapped: Fawtara e-invoicing through an accredited provider, VAT and corporate tax returns on the Tax Authority portal, the WPS salary file through the employer's bank, and Social Protection Fund contributions.</span></li>
+        <li><span><b>Multi-country architecture</b>: one neutral accounting core with each country added as an installable module, the model used by Odoo, NetSuite and Microsoft Business Central.</span></li>
+        <li><span><b>Market price research</b> across the United States and Oman.</span></li>
+        <li><span><b>Business model approved</b>: US Accounting and Oman Accounting at $19 a month or $190 a year, 1099 e-filing at $2 per form, existing customers included free with no end date, and a read-only pause instead of lost access if a payment fails.</span></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Live in production <span class="chip">Completed</span></h3>
+      <ul class="done">
+        <li><span><b>Standard country codes</b> for every business.</span></li>
+        <li><span><b>Country rules separated from the paid module.</b> Paying or not paying never changes how a number is calculated.</span></li>
+        <li><span><b>One definition per module</b> listing the features it unlocks, checked automatically.</span></li>
+        <li><span><b>My Company</b> shows whose accounting rules the books follow and whether the module is on.</span></li>
+        <li><span><b>US Accounting and Oman Accounting</b> listed in the Ocean Market app store.</span></li>
+        <li><span><b>One country per business</b>, enforced by the database.</span></li>
+        <li><span><b>Every existing US and Oman customer</b> holds its country module free, with no end date.</span></li>
+        <li><span><b>Included modules stay on</b> and cannot be removed or paused by mistake.</span></li>
+        <li><span><b>"Included free"</b> shown in Ocean Market for those customers.</span></li>
+        <li><span><b>Free module for new US and Oman businesses</b> that join before sales open.</span></li>
+        <li><span><b>1099 forms, ACH bank files and the IRS mileage log</b> open by country and module.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="en-product" aria-labelledby="en-h-product">
+  <div class="sec-head"><span class="eyebrow">On completion</span><h2 id="en-h-product">What customers will get</h2></div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Product</th><th>Includes</th><th class="r">Price</th></tr></thead>
+      <tbody>
+        <tr><td>Accounting (core)</td><td>Ledger, invoices, bills, bank, inventory valuation, period close, audit trail, financial statements and tax on every document, together with point of sale, inventory and CRM on the same books.</td><td class="r">In every plan</td></tr>
+        <tr class="ours"><td>US Accounting</td><td>1099 forms with IRS e-filing, ACH bank payment files, the IRS mileage log, sales tax nexus monitoring, the exemption certificate register and sales tax by state.</td><td class="r"><span class="n">$19 / month</span><br><span class="n">$190 / year</span></td></tr>
+        <tr class="ours"><td>Oman Accounting</td><td>VAT return, bilingual tax invoice with QR code, WPS salary file, Social Protection Fund report and Fawtara e-invoicing through an accredited provider.</td><td class="r"><span class="n">$19 / month</span><br><span class="n">$190 / year</span></td></tr>
+        <tr><td>Filing services</td><td>1099 e-filing per form; Fawtara transmission per document.</td><td class="r"><span class="n">$2 per 1099</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="en-price" aria-labelledby="en-h-price">
+  <div class="sec-head"><span class="eyebrow">List prices, November 2026</span><h2 id="en-h-price">Price position</h2></div>
+  <div class="bars" role="group" aria-label="Monthly list prices in US dollars for accounting with US compliance">
+    <div class="bar-group">
+      <h3>United States, entry tier, per month</h3>
+      <div class="bar-row ours"><span class="bar-name">OctaBiz Books + US Accounting</span><span class="bar-track"><span class="bar-fill" style="width:21.1%"></span><span class="bar-val" style="left:21.1%">$19</span></span></div>
+      <div class="bar-row"><span class="bar-name">Zoho Books Standard</span><span class="bar-track"><span class="bar-fill" style="width:22.2%"></span><span class="bar-val" style="left:22.2%">$20</span></span></div>
+      <div class="bar-row"><span class="bar-name">Xero Early</span><span class="bar-track"><span class="bar-fill" style="width:30%"></span><span class="bar-val" style="left:30%">$27</span></span></div>
+      <div class="bar-row"><span class="bar-name">QuickBooks Online Simple Start</span><span class="bar-track"><span class="bar-fill" style="width:42.2%"></span><span class="bar-val" style="left:42.2%">$38</span></span></div>
+    </div>
+    <div class="bar-group">
+      <h3>United States, growing business tier, per month</h3>
+      <div class="bar-row"><span class="bar-name">Zoho Books Professional</span><span class="bar-track"><span class="bar-fill" style="width:55.6%"></span><span class="bar-val" style="left:55.6%">$50</span></span></div>
+      <div class="bar-row ours"><span class="bar-name">OctaBiz Core + US Accounting</span><span class="bar-track"><span class="bar-fill" style="width:63.3%"></span><span class="bar-val" style="left:63.3%">$57</span></span></div>
+      <div class="bar-row"><span class="bar-name">Xero Growing</span><span class="bar-track"><span class="bar-fill" style="width:65.6%"></span><span class="bar-val" style="left:65.6%">$59</span></span></div>
+      <div class="bar-row"><span class="bar-name">QuickBooks Online Essentials</span><span class="bar-track"><span class="bar-fill" style="width:94.4%"></span><span class="bar-val" style="left:auto;right:0;padding-right:.4rem">$85</span></span></div>
+    </div>
+    <div class="scale"><span></span><span class="scale-ticks"><span>$0</span><span>$30</span><span>$60</span><span>$90</span></span></div>
+    <p class="small muted">OctaBiz Core also includes point of sale, inventory and CRM. The competitor tiers shown are accounting products.</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Oman</th><th class="r">Per month</th><th>Scope</th></tr></thead>
+      <tbody>
+        <tr><td>Zoho Books Standard</td><td class="r"><span class="n">$18 (≈ 6.9 OMR)</span></td><td>Accounting with VAT reporting</td></tr>
+        <tr class="ours"><td>OctaBiz Books + Oman Accounting</td><td class="r"><span class="n">$19 (≈ 7.3 OMR)</span></td><td>Accounting with the full Oman module</td></tr>
+        <tr><td>FawtaraX</td><td class="r"><span class="n">9 / 29 / 59 OMR</span></td><td>E-invoicing only</td></tr>
+        <tr><td>Wafeq</td><td class="r"><span class="n">12 / 15 / 25 OMR</span></td><td>Accounting and invoicing</td></tr>
+        <tr class="ours"><td>OctaBiz Core + Oman Accounting</td><td class="r"><span class="n">$57 (≈ 21.9 OMR)</span></td><td>Adds point of sale, inventory and CRM</td></tr>
+        <tr><td>Odoo Standard</td><td class="r"><span class="n">≈ $7.25 per user</span></td><td>All apps; Oman price on annual billing</td></tr>
+        <tr><td>Outsourced VAT bookkeeping</td><td class="r"><span class="n">300 to 700 OMR</span></td><td>Accountant's service</td></tr>
+      </tbody>
+      <caption>Rial values at the fixed rate of 2.6008 US dollars per rial.</caption>
+    </table>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Compliance service</th><th>OctaBiz</th><th>Market</th></tr></thead>
+      <tbody>
+        <tr><td>1099 e-filing</td><td><span class="n">$2 per form</span></td><td>QuickBooks: included with Bill Pay Premium (<span class="n">$15</span> a month) and higher bundles. Xero: free for the 2026 tax year. Zoho: through Tax1099. Avalara 1099: <span class="n">$3.10</span> per form for the first 15.</td></tr>
+        <tr><td>Sales tax nexus, certificates and state report</td><td>Included in the <span class="n">$19</span> module</td><td>QuickBooks and Xero: no nexus tracking listed. Zoho: through a separate Avalara integration. TaxJar from <span class="n">$39</span> a month; Avalara <span class="n">$69</span> to <span class="n">$79</span> per state per month.</td></tr>
+        <tr><td>Oman e-invoicing</td><td>Inside the Oman module, per document</td><td>FawtaraX <span class="n">9</span> to <span class="n">59 OMR</span> a month as a separate service</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="en-features" aria-labelledby="en-h-features">
+  <div class="sec-head"><span class="eyebrow">Checked 23 November 2026</span><h2 id="en-h-features">Competitor feature lists</h2></div>
+  <p>What each competitor offers today, taken from its own pricing and help pages. Prices are list prices; current promotions are excluded.</p>
+  <div class="comp-grid">
+    <div class="comp"><h3>QuickBooks Online <small>United States</small></h3><dl>
+      <dt>Plans</dt><dd>Simple Start <span class="n">$38</span> (1 user), Essentials <span class="n">$85</span> (3), Plus <span class="n">$140</span> (5), Advanced <span class="n">$340</span> (25).</dd>
+      <dt>Accounting</dt><dd>Invoicing, estimates and bill pay on every plan. Multi-currency and recurring transactions from Essentials. Purchase orders, budgets, projects and inventory (FIFO or moving average) from Plus. Revenue recognition, fixed assets and workflow automation on Advanced only.</dd>
+      <dt>US compliance</dt><dd>Sales tax calculated automatically. 1099 preparation free; e-filing included only with Bill Pay Premium or higher bundles. Mileage, check printing, ACH bill pay.</dd>
+      <dt>POS, CRM</dt><dd>No native point of sale; buyers are pointed to Shopify POS. Leads hub on Plus and Advanced.</dd>
+      <dt>Payroll</dt><dd>Add-on from <span class="n">$50</span> a month plus <span class="n">$7</span> per employee.</dd>
+      <dt>AI</dt><dd>Intuit Intelligence agents and AI chat (beta).</dd>
+      <dt>Countries</dt><dd>Separate regional editions; a company's region cannot be changed.</dd>
+    </dl></div>
+    <div class="comp"><h3>Xero <small>United States</small></h3><dl>
+      <dt>Plans</dt><dd>Early <span class="n">$27</span>, Growing <span class="n">$59</span>, Established <span class="n">$97</span>; unlimited users.</dd>
+      <dt>Accounting</dt><dd>Quotes, invoices, bank reconciliation, purchase orders and inventory (average cost, up to 4,000 items) on every plan. Multi-currency, projects and expense claims on Established only. Tracking categories, repeating invoices, lock dates, audit trail.</dd>
+      <dt>US compliance</dt><dd>Sales tax calculated through Avalara; no return filing and no nexus tracking. 1099 e-filing free for the 2026 tax year. ACH through Melio; check printing.</dd>
+      <dt>POS, CRM</dt><dd>No native point of sale. Native CRM not confirmed.</dd>
+      <dt>Payroll</dt><dd>Gusto add-on from <span class="n">$36</span> a month plus <span class="n">$6</span> per person.</dd>
+      <dt>AI</dt><dd>JAX (Just Ask Xero).</dd>
+      <dt>Countries</dt><dd>Separate country sites and prices.</dd>
+    </dl></div>
+    <div class="comp"><h3>Zoho Books <small>United States</small></h3><dl>
+      <dt>Plans</dt><dd>Free; Standard <span class="n">$20</span> (3 users); Professional <span class="n">$50</span> (5); Premium <span class="n">$70</span> (10); Elite <span class="n">$150</span>; Ultimate <span class="n">$275</span>.</dd>
+      <dt>Accounting</dt><dd>Estimates, recurring invoices and bank reconciliation from Free. Bills, purchase orders, multi-currency, inventory (FIFO or weighted average), projects and approvals from Professional. Budgets, fixed assets and basic revenue recognition from Premium.</dd>
+      <dt>US compliance</dt><dd>Sales tax calculated automatically; filing and nexus through a separate Avalara integration. Exemption certificates per customer. 1099 e-filing through Tax1099. Mileage. ACH through a <span class="n">$59</span> to <span class="n">$69</span> BillPay add-on.</dd>
+      <dt>POS, CRM</dt><dd>Separate products: Zoho POS from <span class="n">$15</span> per location, and Zoho CRM.</dd>
+      <dt>Payroll</dt><dd>Separate product from <span class="n">$39</span> a month plus <span class="n">$6</span> per employee.</dd>
+      <dt>AI</dt><dd>Zia assistants and agents.</dd>
+      <dt>Countries</dt><dd>Country editions; the country and base currency cannot be changed.</dd>
+    </dl></div>
+    <div class="comp"><h3>Zoho Books <small>Oman</small></h3><dl>
+      <dt>Plans</dt><dd>Standard <span class="n">$15</span> on annual billing or <span class="n">$18</span> monthly (3 users), up to Ultimate <span class="n">$249</span>.</dd>
+      <dt>Oman VAT</dt><dd>VAT return from Standard; invoices printable in Arabic.</dd>
+      <dt>Fawtara</dt><dd>Only through a third-party connector.</dd>
+      <dt>Payroll</dt><dd>Separate Zoho Payroll with WPS, Social Protection Fund and end of service, <span class="n">$10</span> to <span class="n">$20</span> a month.</dd>
+      <dt>POS, CRM</dt><dd>Separate products; Zoho POS launched in Oman in August 2026.</dd>
+    </dl></div>
+    <div class="comp"><h3>Wafeq <small>Oman</small></h3><dl>
+      <dt>Plans</dt><dd>Starter <span class="n">12 OMR</span> (2 users), Plus <span class="n">15 OMR</span> (5), Premium <span class="n">25 OMR</span> (20).</dd>
+      <dt>Oman VAT</dt><dd>VAT return in the Tax Authority format; bilingual invoices with QR code.</dd>
+      <dt>Fawtara</dt><dd>Not mentioned on its Oman pages.</dd>
+      <dt>Accounting</dt><dd>FIFO or weighted average, AI bank reconciliation and multi-currency on every plan. Projects from Plus. Inventory, warehouses, fixed assets and approvals on Premium.</dd>
+      <dt>POS, payroll</dt><dd>No native point of sale (Foodics integration). General payroll on Premium.</dd>
+    </dl></div>
+    <div class="comp"><h3>Odoo <small>Oman localisation</small></h3><dl>
+      <dt>Price</dt><dd>Standard about <span class="n">$7.25</span> per user per month in Oman on annual billing (<span class="n">$24.90</span> in the US); all apps included.</dd>
+      <dt>Oman VAT</dt><dd>VAT report in the Oman return format, reverse charge, Arabic and English invoices.</dd>
+      <dt>Fawtara</dt><dd>Only through third-party modules.</dd>
+      <dt>Payroll</dt><dd>Oman localisation with WPS file, Social Protection Fund and end-of-service gratuity.</dd>
+      <dt>Operations</dt><dd>Native point of sale, CRM, inventory (average or FIFO) and manufacturing. Multi-company on the Custom plan.</dd>
+      <dt>Countries</dt><dd>One product with localisation packs.</dd>
+    </dl></div>
+    <div class="comp"><h3>FawtaraX <small>Oman</small></h3><dl>
+      <dt>Plans</dt><dd><span class="n">9</span>, <span class="n">29</span> and <span class="n">59 OMR</span> a month for 50, 500 and 1,000 invoices.</dd>
+      <dt>Scope</dt><dd>E-invoicing only: bilingual templates, QR codes, Peppol PINT OM. States that it is accredited by the Tax Authority.</dd>
+      <dt>Not offered</dt><dd>Ledger, VAT return and payroll.</dd>
+    </dl></div>
+  </div>
+  <p class="small muted">Fawtara becomes mandatory on 1 April 2027 for businesses with annual supplies above 5 million rials and on 1 October 2027 for all others (Ministerial Decision 189/2026). Accreditation exists only for e-invoicing service providers, not for accounting software.</p>
+</section>
+
+<section id="en-edge" aria-labelledby="en-h-edge">
+  <div class="sec-head"><span class="eyebrow">On completion</span><h2 id="en-h-edge">What OctaBiz has that they don't</h2></div>
+  <div class="tbl mx">
+    <table>
+      <thead><tr><th>Capability</th><th>OctaBiz</th><th>QuickBooks Online</th><th>Xero</th><th>Zoho Books</th><th>Odoo</th><th>Wafeq</th></tr></thead>
+      <tbody>
+        <tr><td>Point of sale posting to the same ledger</td><td class="y">Yes, including sales made offline</td><td class="nl">No native POS</td><td class="nl">No native POS</td><td>Separate product</td><td>Yes</td><td>Integration (Foodics)</td></tr>
+        <tr><td>CRM in the same product</td><td class="y">Yes</td><td>Leads hub on Plus ($140) and up</td><td class="nl">Not confirmed</td><td>Separate product</td><td>Yes</td><td class="nl">Not confirmed</td></tr>
+        <tr><td>Revenue recognition (ASC 606)</td><td class="y">Yes; AI reads the contract</td><td>Advanced ($340) only</td><td class="nl">Not confirmed</td><td>Premium ($70) and up</td><td class="nl">Not checked</td><td class="nl">Not listed</td></tr>
+        <tr><td>Fixed assets with US tax depreciation (MACRS, section 179, bonus)</td><td class="y">Yes</td><td>Fixed assets on Advanced ($340)</td><td>Fixed assets</td><td>Fixed assets from Premium ($70)</td><td>Fixed assets</td><td>Fixed assets on Premium</td></tr>
+        <tr><td>Sales tax nexus monitoring</td><td class="y">Yes, in US Accounting</td><td class="nl">Not listed</td><td class="nl">No nexus tracking</td><td>Separate Avalara integration</td><td class="nl">Not checked</td><td class="nl">n/a</td></tr>
+        <tr><td>Exemption certificate register</td><td class="y">Yes, in US Accounting</td><td class="nl">Not listed</td><td class="nl">Certificate storage not listed</td><td>Per customer</td><td class="nl">Not checked</td><td class="nl">n/a</td></tr>
+        <tr><td>Goods on approval and consignment-in</td><td class="y">Yes, with owner settlements</td><td class="nl">Not listed</td><td class="nl">Not listed</td><td class="nl">Not listed</td><td class="nl">Not checked</td><td class="nl">Not listed</td></tr>
+        <tr><td>Manufacturing (bills of materials, work orders) and landed cost</td><td class="y">Yes</td><td class="nl">Not listed</td><td class="nl">Not listed</td><td class="nl">Not listed</td><td>Yes</td><td class="nl">Not listed</td></tr>
+        <tr><td>Intercompany and consolidation</td><td class="y">Yes</td><td>Separate product (Intuit Enterprise Suite)</td><td class="nl">Not listed</td><td class="nl">Not listed</td><td>Multi-company on Custom plan</td><td class="nl">Not listed</td></tr>
+        <tr><td>Oman payroll in the same product (Social Protection Fund, end of service, WPS)</td><td class="y">Yes</td><td class="nl">n/a</td><td class="nl">n/a</td><td>Separate product</td><td>Yes</td><td class="nl">Not confirmed</td></tr>
+        <tr><td>Bilingual Arabic and English tax invoice</td><td class="y">Yes</td><td class="nl">n/a</td><td class="nl">n/a</td><td>Arabic printing</td><td>Yes</td><td>Yes, with QR code</td></tr>
+        <tr><td>Fawtara e-invoicing built into the product</td><td class="y">Yes, through an accredited provider</td><td class="nl">n/a</td><td class="nl">n/a</td><td>Third-party connector</td><td>Third-party modules</td><td class="nl">Not mentioned</td></tr>
+        <tr><td>US and Oman compliance on one core</td><td class="y">Yes, as country modules</td><td>Separate regional editions</td><td>Separate country sites</td><td>Separate country editions</td><td>Localisation packs</td><td>Gulf country sites</td></tr>
+      </tbody>
+      <caption>From each vendor's pricing and help pages, 23 November 2026. "Not listed" or "Not confirmed": the vendor's published feature list does not show it. "Not checked": outside this review. "n/a": the product does not serve that market.</caption>
+    </table>
+  </div>
+  <div class="panel">
+    <h3>More OctaBiz capabilities</h3>
+    <ul class="plain">
+      <li>Every change made by the AI assistant is logged and can be undone in one step.</li>
+      <li>AI collection reminders, including reminder calls by voice, and a nightly books health check with five statistical anomaly tests.</li>
+      <li>Purchase-price variance split under IAS 2, and landed cost split between stock on hand and stock already sold.</li>
+      <li>An automatic daily close that can be overridden with a written reason, next to lock dates for sales, purchases and tax.</li>
+      <li>Owner statements for consignment stock that carry VAT, with buy-out and settlement.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="en-tech" aria-labelledby="en-h-tech">
+  <div class="sec-head"><span class="eyebrow">How it is built</span><h2 id="en-h-tech">Technical analysis of the accounting module</h2></div>
+  <p>The accounting module, area by area. Every point below is backed by working code in production.</p>
+  <div class="tech-grid">
+    <div class="tech lead-card"><h3>Country architecture (this update)</h3><ul>
+      <li>A country-neutral core. The business's country decides which rules apply; the module unlocks the paid features.</li>
+      <li>One definition per module, checked automatically. One country per business, enforced by the database.</li>
+      <li>Modules included for existing customers stay on. Screens fall back to the country rule if the server cannot answer.</li>
+      <li>A new market is a new module definition and its content, not a new edition of the product.</li>
+    </ul></div>
+    <div class="tech"><h3>One ledger for the whole business</h3><ul>
+      <li>The till, OctaShop, WooCommerce, Square and Stripe post sales, refunds, tips and payouts into the same books.</li>
+      <li>Point-of-sale sales made offline are queued and posted once when the connection returns, up to 14 days back.</li>
+      <li>The database stops a payment arriving from QuickBooks, Plaid, Square or Stripe from being booked twice.</li>
+    </ul></div>
+    <div class="tech"><h3>Controls held by the database</h3><ul>
+      <li>Posted bills cannot be edited, and a closed period refuses new entries.</li>
+      <li>Lock dates by area with time-limited exceptions, plus an automatic daily close.</li>
+      <li>An audit log on every table that holds money. Two-step sign-in extends to the books when the business requires it.</li>
+      <li>Multi-step approvals for bills, payments and credit notes, with separation of duties.</li>
+    </ul></div>
+    <div class="tech"><h3>Tax</h3><ul>
+      <li>Rates, agencies, codes and groups, with rates versioned by date.</li>
+      <li>US: use tax, backup withholding, economic nexus, exemption certificates, sales tax by state, and tax return line mapping for Schedule C, 1065, 1120 and 1120-S. A Stripe Tax adapter can replace the built-in engine.</li>
+      <li>Oman and the Gulf: country chart of accounts, recoverable VAT per bill, bilingual Arabic and English tax invoice.</li>
+    </ul></div>
+    <div class="tech"><h3>Inventory and costing</h3><ul>
+      <li>Moving weighted average cost; batches and expiry dates with expiry-first picking.</li>
+      <li>Landed cost split between stock on hand and stock sold; lower of cost and net realisable value; IAS 2 price variance split.</li>
+      <li>Bills of materials and work orders at actual cost. Multi-branch and multi-warehouse stock, with branch tags on journal lines and a job that reconciles the ledger to stock.</li>
+    </ul></div>
+    <div class="tech"><h3>Receivables and payables</h3><ul>
+      <li>Estimates with progress invoicing, recurring invoices with automatic charge, deposits and retainers, payment links, early-payment discounts, customer portal.</li>
+      <li>Requisitions, requests for quote, purchase orders, receiving, vendor returns, EDI orders, bill OCR, vendor portal, scheduled and batch payments, checks, ACH files, 1099 forms and W-9 requests.</li>
+      <li>Goods on approval and consignment-in with owner settlements.</li>
+    </ul></div>
+    <div class="tech"><h3>Close, reporting and advanced accounting</h3><ul>
+      <li>Close workspace with tasks, blockers and sign-offs, and a fiscal year wizard.</li>
+      <li>Profit and loss, balance sheet, cash flow, changes in equity, general ledger, aging, and trial balance on accrual or cash basis with comparatives. Budgets by dimension.</li>
+      <li>Intercompany and consolidation, revenue recognition contracts, deferrals, leases, loans, cash forecast, project profitability and work in progress, and fixed assets with book and tax depreciation.</li>
+    </ul></div>
+    <div class="tech"><h3>AI inside the books</h3><ul>
+      <li>Ask AI works on the screen that is open, for example filling in an invoice.</li>
+      <li>Every AI change is logged and can be undone. Bank matching shows its confidence and its reason.</li>
+      <li>Receipt OCR and an email document inbox, an AI collections agent with reminder calls by voice, nightly anomaly checks, and AI that reads contracts to set up revenue recognition.</li>
+    </ul></div>
+    <div class="tech"><h3>Accountants and payroll</h3><ul>
+      <li>Accountant role, read-only books viewer, multi-client accountant desk and CPA year-end package.</li>
+      <li>Moving books in from QuickBooks, Xero or Excel.</li>
+      <li>Oman payroll with Social Protection Fund contributions and end-of-service accrual, posted to the ledger.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="en-adv" aria-labelledby="en-h-adv">
+  <div class="sec-head"><span class="eyebrow">On completion</span><h2 id="en-h-adv">Competitive advantages</h2></div>
+  <div class="list">
+    <div class="item"><span class="k">1</span><div><h3>The lowest US entry price, and a full suite in Oman</h3><p>In the US, $19 a month for accounting with the US module comes in under Zoho Books ($20), Xero ($27) and QuickBooks Online ($38), and Core with the module costs $57, a third less than QuickBooks Online Essentials ($85), with point of sale, inventory and CRM included. In Oman it is priced below Wafeq (12 OMR, about $31) and below FawtaraX, which offers e-invoicing alone.</p></div></div>
+    <div class="item"><span class="k">2</span><div><h3>Operations and compliance on one ledger</h3><p>A sale at the till, a stock movement and the tax on it land in the same books the compliance module reports from. QuickBooks and Xero have no native point of sale, Zoho sells point of sale and CRM as separate products, and Wafeq and FawtaraX cover accounting or e-invoicing alone.</p></div></div>
+    <div class="item"><span class="k">3</span><div><h3>The enterprise country model at small-business prices</h3><p>One neutral core with each country as a module is how Odoo, NetSuite and Microsoft Business Central are built. QuickBooks, Xero and Zoho maintain a separate edition per country. For OctaBiz each new market is a new module on the same product.</p></div></div>
+    <div class="item"><span class="k">4</span><div><h3>Customer-first terms written into the product</h3><p>Payment never changes how a number is calculated, a lapsed module becomes read only and the books stay intact, and customers who were with us before launch keep their module free for life. These terms are enforced by the system itself.</p></div></div>
+    <div class="item"><span class="k">5</span><div><h3>US sales tax compliance included</h3><p>Nexus monitoring, an exemption certificate register and the sales tax report by state come inside the $19 module. QuickBooks and Xero list no nexus tracking, and Zoho needs a separate Avalara integration for it. 1099 forms are filed at $2 per form.</p></div></div>
+    <div class="item"><span class="k">6</span><div><h3>Fawtara built in, ahead of the 2027 deadlines</h3><p>E-invoicing becomes mandatory in Oman on 1 April 2027 for large businesses and on 1 October 2027 for everyone else. Zoho Books, Odoo and Wafeq have no Fawtara support of their own and rely on third-party connectors or say nothing about it. In OctaBiz the VAT return, the bilingual tax invoice, the WPS salary file, the Social Protection Fund report and Fawtara e-invoicing all sit inside the system that runs the shop.</p></div></div>
+  </div>
+</section>
+
+<section id="en-map" aria-labelledby="en-h-map">
+  <div class="sec-head"><span class="eyebrow">On completion</span><h2 id="en-h-map">Market position</h2></div>
+  <figure>
+    <div class="map">
+      <svg viewBox="0 0 660 330" role="img" aria-labelledby="en-map-t en-map-d">
+        <title id="en-map-t">Entry price against breadth of product</title>
+        <desc id="en-map-d">OctaBiz sits at 19 dollars in the full operations band. Odoo is in the same band at 24.90 dollars per user. Zoho at 20, Xero at 27 and QuickBooks at 38 dollars are accounting-first products. Wafeq at about 31 dollars covers accounting and invoicing.</desc>
+        <rect class="m-band" x="80" y="20" width="560" height="80"/><rect class="m-band" x="80" y="200" width="560" height="80"/>
+        <line class="m-grid" x1="80" y1="100" x2="640" y2="100"/><line class="m-grid" x1="80" y1="200" x2="640" y2="200"/>
+        <line class="m-grid" x1="220" y1="20" x2="220" y2="280"/><line class="m-grid" x1="360" y1="20" x2="360" y2="280"/><line class="m-grid" x1="500" y1="20" x2="500" y2="280"/>
+        <line class="m-axis" x1="80" y1="280" x2="640" y2="280"/><line class="m-axis" x1="80" y1="20" x2="80" y2="280"/>
+        <text class="m-band-label" x="88" y="36">FULL OPERATIONS: ACCOUNTING, POS, INVENTORY, CRM</text>
+        <text class="m-band-label" x="88" y="116">ACCOUNTING FIRST, OPERATIONS THROUGH OTHER PRODUCTS</text>
+        <text class="m-band-label" x="88" y="216">ACCOUNTING AND INVOICING ONLY</text>
+        <text class="m-tick" x="80" y="298" text-anchor="middle">$0</text><text class="m-tick" x="220" y="298" text-anchor="middle">$10</text><text class="m-tick" x="360" y="298" text-anchor="middle">$20</text><text class="m-tick" x="500" y="298" text-anchor="middle">$30</text><text class="m-tick" x="640" y="298" text-anchor="end">$40</text>
+        <text class="m-tick" x="360" y="320" text-anchor="middle">Entry price per month with country compliance (USD)</text>
+        <circle class="m-dot ours" cx="346" cy="68" r="8"/><text class="m-label ours" x="346" y="90" text-anchor="middle">OctaBiz</text>
+        <circle class="m-dot" cx="428.6" cy="68" r="7"/><text class="m-label" x="440" y="58">Odoo (per user)</text>
+        <circle class="m-dot" cx="360" cy="150" r="7"/><text class="m-label" x="360" y="174" text-anchor="middle">Zoho Books</text>
+        <circle class="m-dot" cx="458" cy="150" r="7"/><text class="m-label" x="458" y="174" text-anchor="middle">Xero</text>
+        <circle class="m-dot" cx="612" cy="150" r="7"/><text class="m-label" x="612" y="174" text-anchor="middle">QuickBooks</text>
+        <circle class="m-dot" cx="516.8" cy="240" r="7"/><text class="m-label" x="516.8" y="264" text-anchor="middle">Wafeq</text>
+      </svg>
+    </div>
+    <figcaption>Horizontal positions use US list prices on one scale; Wafeq is converted from rials. Vertical bands describe each product's scope. Odoo is priced per user and by country.</figcaption>
+  </figure>
+  <p class="statement">On completion, OctaBiz will be the lowest-cost way for a small US business to run its operations and stay compliant from one system, and in Oman the only product among those reviewed that runs the shop, keeps the books and sends Fawtara e-invoices without a third-party connector.</p>
+</section>
+
+<section id="en-opp" aria-labelledby="en-h-opp">
+  <div class="sec-head"><span class="eyebrow">With our pricing</span><h2 id="en-h-opp">Market opportunities</h2></div>
+  <div class="list">
+    <div class="item"><span class="k">1</span><div><h3>QuickBooks customers after the 2026 price rises</h3><p>QuickBooks Online raised its Essentials, Plus and Advanced prices in August 2026. OctaBiz offers the same US compliance for half the entry price ($19 against $38) and a third less at the growing-business tier ($57 against $85), with point of sale, inventory and CRM included.</p></div></div>
+    <div class="item"><span class="k">2</span><div><h3>Businesses paying for several tools</h3><p>A shop that pays separately for accounting, a point of sale, a 1099 filing service and a sales tax monitor can move to one subscription and one set of books.</p></div></div>
+    <div class="item"><span class="k">3</span><div><h3>US sellers crossing state thresholds</h3><p>A business that starts selling into other states needs to watch economic nexus and keep exemption certificates. QuickBooks and Xero list no nexus tracking, and stand-alone services start at $39 a month. In OctaBiz both come inside the $19 module.</p></div></div>
+    <div class="item"><span class="k">4</span><div><h3>Oman's e-invoicing deadlines</h3><p>Fawtara becomes mandatory on 1 April 2027 for businesses above 5 million rials and on 1 October 2027 for all others, so every VAT-registered business in Oman must choose a compliant system within the next year. The main accounting products reach Fawtara only through third-party connectors, and FawtaraX charges 9 to 59 OMR a month for e-invoicing alone. OctaBiz Core with the Oman module, at about 22 OMR, covers the shop, the books, the VAT return and e-invoicing together.</p></div></div>
+    <div class="item"><span class="k">5</span><div><h3>Bringing VAT work in house</h3><p>Small Omani businesses that pay 300 to 700 OMR a month for outsourced VAT bookkeeping can prepare their VAT return themselves for 7.3 to 22 OMR a month.</p></div></div>
+    <div class="item"><span class="k">6</span><div><h3>A first paid step for free users</h3><p>Users of the free Books plan can start paying at $19 a month for exactly what their country requires.</p></div></div>
+    <div class="item"><span class="k">7</span><div><h3>New markets as modules</h3><p>Each further country is a new module on the same core, so expansion adds revenue without building a new product.</p></div></div>
+  </div>
+  <div class="figs" aria-label="Illustrative module revenue">
+    <div class="fig"><span class="v">$1,900</span><span class="l">monthly recurring revenue per 100 module subscribers</span></div>
+    <div class="fig"><span class="v">$9,500</span><span class="l">per month at 500 subscribers</span></div>
+    <div class="fig"><span class="v">$228,000</span><span class="l">a year at 1,000 subscribers on monthly billing</span></div>
+  </div>
+  <p class="small muted">Revenue figures are arithmetic on the $19 monthly price, shown for scale.</p>
+  <details class="src">
+    <summary>Price sources (November 2026)</summary>
+    <ul>
+      <li><a href="https://www.nerdwallet.com/article/small-business/quickbooks-pricing">NerdWallet: QuickBooks pricing 2026</a></li>
+      <li><a href="https://www.xero.com/us/pricing/">Xero US pricing</a></li>
+      <li><a href="https://www.capterra.com/p/163115/Zoho-Books/pricing/">Capterra: Zoho Books pricing</a></li>
+      <li><a href="https://support.taxjar.com/article/1074-taxjar-pricing-details">TaxJar pricing</a> · <a href="https://www.avalara.com/us/en/blog/avalara-select-sales-tax-pricing-small-businesses.html">Avalara sales tax pricing</a> · <a href="https://www.avalara.com/us/en/products/1099/pricing.html">Avalara 1099 pricing</a></li>
+      <li><a href="https://beancount.io/blog/2026/10/18/1099-filing-software-track1099-vs-tax1099-vs-iris-guide">Track1099, Tax1099 and IRIS compared</a></li>
+      <li><a href="https://www.wafeq.com/en-om/pricing">Wafeq Oman pricing</a> · <a href="https://sanadservice.com/en/guides/accounting-software-oman/">Sanad: accounting software in Oman</a> · <a href="https://joinsumu.com/blog/best-e-invoicing-software-oman-compared">Sumu: e-invoicing in Oman</a></li>
+      <li><a href="https://www.pwc.com/m1/en/services/tax/middle-east-tax-news-alerts/2026/oman-e-invoicing-implementation-developments.html">PwC: Oman e-invoicing developments 2026</a></li>
+    </ul>
+  </details>
+</section>
+
+<footer>Country Accounting board report · 23 November 2026</footer>
+</article>
+
+<!-- ===================== PERSIAN ===================== -->
+<article id="fa" lang="fa" dir="rtl" hidden>
+<header class="cover">
+  <span class="eyebrow">گزارش هیئت مدیره · حسابداری</span>
+  <h1>حسابداری کشوری: کارهای انجام‌شده و جایگاه ما در بازار پس از پایان پروژه</h1>
+  <p class="lead">این گزارش کارهای حسابداری انجام‌شده از ۱۸ تا ۲۳ نوامبر ۲۰۲۶ را مرور می‌کند و نشان می‌دهد OctaBiz پس از پایان پروژه‌ی حسابداری کشوری، از نظر مزیت رقابتی، جایگاه قیمتی و فرصت‌های بازار، کجای بازار بین‌المللی خواهد ایستاد؛ همراه با فهرست امکانات رقبا، آنچه ما داریم و آن‌ها ندارند، و تحلیل فنی ماژول حسابداری.</p>
+  <div class="meta"><span><b>تاریخ</b> ۲۳ نوامبر ۲۰۲۶</span><span><b>دوره</b> ۱۸ تا ۲۳ نوامبر ۲۰۲۶</span><span><b>تهیه‌کننده</b> محصول و مهندسی</span></div>
+  <nav class="toc" aria-label="بخش‌ها">
+    <a href="#fa-done">کارهای انجام‌شده</a>
+    <a href="#fa-product">محصول</a>
+    <a href="#fa-price">جایگاه قیمتی</a>
+    <a href="#fa-features">امکانات رقبا</a>
+    <a href="#fa-edge">مقایسه‌ی امکانات</a>
+    <a href="#fa-tech">تحلیل فنی</a>
+    <a href="#fa-adv">مزیت‌های رقابتی</a>
+    <a href="#fa-map">جایگاه در بازار</a>
+    <a href="#fa-opp">فرصت‌های بازار</a>
+  </nav>
+</header>
+
+<section id="fa-done" aria-labelledby="fa-h-done">
+  <div class="sec-head"><span class="eyebrow">۱۸ تا ۲۳ نوامبر ۲۰۲۶</span><h2 id="fa-h-done">کارهای انجام‌شده</h2></div>
+  <p>در شش روز، حسابداری OctaBiz به یک هسته‌ی مستقل از کشور به‌اضافه‌ی یک ماژول حسابداری پولی برای هر کشور تبدیل شد و پایه‌ی این خط محصول روی production رفت.</p>
+  <div class="cols">
+    <div class="panel">
+      <h3>تحقیق و طراحی <span class="chip">انجام شد</span></h3>
+      <ul class="done">
+        <li><span><b>بررسی آمادگی حسابداری عمان</b> روی یک حساب واقعی، از نگاه حسابدار عمانی.</span></li>
+        <li><span><b>برنامه‌ی زیرساخت حسابداری عمان</b> با نقشه‌ی همه‌ی مسیرهای دولتی: فاکتور الکترونیکی Fawtara از طریق ارائه‌دهنده‌ی معتبر، اظهارنامه‌ی مالیات بر ارزش افزوده و مالیات بر درآمد در درگاه سازمان مالیات، فایل حقوق WPS از طریق بانک، و صندوق حمایت اجتماعی.</span></li>
+        <li><span><b>معماری چندکشوری</b>: یک هسته‌ی حسابداری مستقل از کشور، و هر کشور یک ماژول قابل نصب؛ همان الگویی که Odoo، NetSuite و Microsoft Business Central به کار می‌برند.</span></li>
+        <li><span><b>تحقیق قیمت بازار</b> در آمریکا و عمان.</span></li>
+        <li><span><b>تأیید مدل کسب‌وکار</b>: US Accounting و Oman Accounting ماهی <span class="n">$19</span> یا سالی <span class="n">$190</span>، ارسال الکترونیکی 1099 هر فرم <span class="n">$2</span>، ماژول رایگان و بی‌پایان برای مشتریان فعلی، و توقف فقط‌خواندنی به جای قطع دسترسی در صورت پرداخت ناموفق.</span></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>فعال روی production <span class="chip">انجام شد</span></h3>
+      <ul class="done">
+        <li><span><b>کد استاندارد کشور</b> برای همه‌ی کسب‌وکارها.</span></li>
+        <li><span><b>جدا شدن قاعده‌های کشور از ماژول پولی.</b> پرداخت یا عدم پرداخت هرگز نحوه‌ی محاسبه‌ی هیچ عددی را تغییر نمی‌دهد.</span></li>
+        <li><span><b>یک تعریف برای هر ماژول</b> با فهرست امکاناتی که باز می‌کند، با بررسی خودکار.</span></li>
+        <li><span><b>صفحه‌ی My Company</b> نشان می‌دهد دفاتر تابع قاعده‌های کدام کشور است و ماژول روشن است یا نه.</span></li>
+        <li><span><b>عرضه‌ی US Accounting و Oman Accounting</b> در فروشگاه Ocean Market.</span></li>
+        <li><span><b>هر کسب‌وکار، یک کشور</b>؛ با اعمال در خود پایگاه داده.</span></li>
+        <li><span><b>همه‌ی مشتریان فعلی آمریکا و عمان</b> ماژول کشور خود را رایگان و بدون تاریخ پایان دارند.</span></li>
+        <li><span><b>ماژول هدیه همیشه روشن می‌ماند</b> و به‌اشتباه حذف یا متوقف نمی‌شود.</span></li>
+        <li><span><b>نمایش «Included free»</b> برای این مشتریان در Ocean Market.</span></li>
+        <li><span><b>ماژول رایگان برای کسب‌وکارهای تازه‌ی آمریکایی و عمانی</b> که پیش از شروع فروش ثبت‌نام کنند.</span></li>
+        <li><span><b>فرم 1099، فایل بانکی ACH و دفتر مسافت IRS</b> بر پایه‌ی کشور و ماژول باز می‌شوند.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="fa-product" aria-labelledby="fa-h-product">
+  <div class="sec-head"><span class="eyebrow">پس از پایان پروژه</span><h2 id="fa-h-product">آنچه مشتری دریافت می‌کند</h2></div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>محصول</th><th>شامل</th><th class="r">قیمت</th></tr></thead>
+      <tbody>
+        <tr><td>Accounting (هسته)</td><td>دفتر کل، صورت‌حساب، قبض، بانک، ارزش‌گذاری موجودی، بستن دوره، ردپای حسابرسی، صورت‌های مالی و محاسبه‌ی مالیات روی هر سند، همراه با POS، موجودی و CRM روی همان دفاتر.</td><td class="r">در همه‌ی پلن‌ها</td></tr>
+        <tr class="ours"><td>US Accounting</td><td>فرم 1099 با ارسال الکترونیکی به IRS، فایل پرداخت بانکی ACH، دفتر مسافت IRS، پایش nexus مالیات فروش، دفتر گواهی‌های معافیت و گزارش مالیات فروش به تفکیک ایالت.</td><td class="r"><span class="n">$19 / month</span><br><span class="n">$190 / year</span></td></tr>
+        <tr class="ours"><td>Oman Accounting</td><td>اظهارنامه‌ی مالیات بر ارزش افزوده، صورت‌حساب مالیاتی دوزبانه با QR، فایل حقوق WPS، گزارش صندوق حمایت اجتماعی و فاکتور الکترونیکی Fawtara از طریق ارائه‌دهنده‌ی معتبر.</td><td class="r"><span class="n">$19 / month</span><br><span class="n">$190 / year</span></td></tr>
+        <tr><td>خدمات ارسال</td><td>ارسال 1099 به‌ازای هر فرم؛ ارسال Fawtara به‌ازای هر سند.</td><td class="r"><span class="n">$2</span> برای هر 1099</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="fa-price" aria-labelledby="fa-h-price">
+  <div class="sec-head"><span class="eyebrow">قیمت‌های رسمی، نوامبر ۲۰۲۶</span><h2 id="fa-h-price">جایگاه قیمتی</h2></div>
+  <div class="bars" role="group" aria-label="قیمت ماهانه به دلار برای حسابداری با الزامات آمریکا">
+    <div class="bar-group">
+      <h3>آمریکا، سطح ورودی، ماهانه</h3>
+      <div class="bar-row ours"><span class="bar-name">OctaBiz Books + US Accounting</span><span class="bar-track"><span class="bar-fill" style="width:21.1%"></span><span class="bar-val" style="left:21.1%">$19</span></span></div>
+      <div class="bar-row"><span class="bar-name">Zoho Books Standard</span><span class="bar-track"><span class="bar-fill" style="width:22.2%"></span><span class="bar-val" style="left:22.2%">$20</span></span></div>
+      <div class="bar-row"><span class="bar-name">Xero Early</span><span class="bar-track"><span class="bar-fill" style="width:30%"></span><span class="bar-val" style="left:30%">$27</span></span></div>
+      <div class="bar-row"><span class="bar-name">QuickBooks Online Simple Start</span><span class="bar-track"><span class="bar-fill" style="width:42.2%"></span><span class="bar-val" style="left:42.2%">$38</span></span></div>
+    </div>
+    <div class="bar-group">
+      <h3>آمریکا، سطح کسب‌وکار در حال رشد، ماهانه</h3>
+      <div class="bar-row"><span class="bar-name">Zoho Books Professional</span><span class="bar-track"><span class="bar-fill" style="width:55.6%"></span><span class="bar-val" style="left:55.6%">$50</span></span></div>
+      <div class="bar-row ours"><span class="bar-name">OctaBiz Core + US Accounting</span><span class="bar-track"><span class="bar-fill" style="width:63.3%"></span><span class="bar-val" style="left:63.3%">$57</span></span></div>
+      <div class="bar-row"><span class="bar-name">Xero Growing</span><span class="bar-track"><span class="bar-fill" style="width:65.6%"></span><span class="bar-val" style="left:65.6%">$59</span></span></div>
+      <div class="bar-row"><span class="bar-name">QuickBooks Online Essentials</span><span class="bar-track"><span class="bar-fill" style="width:94.4%"></span><span class="bar-val" style="left:auto;right:0;padding-right:.4rem">$85</span></span></div>
+    </div>
+    <div class="scale"><span></span><span class="scale-ticks"><span>$0</span><span>$30</span><span>$60</span><span>$90</span></span></div>
+    <p class="small muted">پلن Core در OctaBiz شامل POS، موجودی و CRM هم هست. سطح‌های رقبا در این نمودار محصولات حسابداری‌اند.</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>عمان</th><th class="r">ماهانه</th><th>دامنه</th></tr></thead>
+      <tbody>
+        <tr><td>Zoho Books Standard</td><td class="r"><span class="n">$18 (≈ 6.9 OMR)</span></td><td>حسابداری با گزارش مالیات بر ارزش افزوده</td></tr>
+        <tr class="ours"><td>OctaBiz Books + Oman Accounting</td><td class="r"><span class="n">$19 (≈ 7.3 OMR)</span></td><td>حسابداری با ماژول کامل عمان</td></tr>
+        <tr><td>FawtaraX</td><td class="r"><span class="n">9 / 29 / 59 OMR</span></td><td>فقط فاکتور الکترونیکی</td></tr>
+        <tr><td>Wafeq</td><td class="r"><span class="n">12 / 15 / 25 OMR</span></td><td>حسابداری و صدور صورت‌حساب</td></tr>
+        <tr class="ours"><td>OctaBiz Core + Oman Accounting</td><td class="r"><span class="n">$57 (≈ 21.9 OMR)</span></td><td>به‌اضافه‌ی POS، موجودی و CRM</td></tr>
+        <tr><td>Odoo Standard</td><td class="r">حدود <span class="n">$7.25</span> برای هر کاربر</td><td>همه‌ی اپ‌ها؛ قیمت عمان با پرداخت سالانه</td></tr>
+        <tr><td>حسابداری برون‌سپاری‌شده‌ی VAT</td><td class="r">۳۰۰ تا ۷۰۰ ریال</td><td>خدمت حسابدار</td></tr>
+      </tbody>
+      <caption>ریال عمان با نرخ ثابت ۲٫۶۰۰۸ دلار.</caption>
+    </table>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>خدمت انطباق</th><th>OctaBiz</th><th>بازار</th></tr></thead>
+      <tbody>
+        <tr><td>ارسال الکترونیکی 1099</td><td><span class="n">$2</span> برای هر فرم</td><td>QuickBooks: همراه بسته‌ی Bill Pay Premium (ماهی <span class="n">$15</span>) و بسته‌های بالاتر. Xero: برای سال مالیاتی ۲۰۲۶ رایگان. Zoho: از طریق Tax1099. Avalara 1099: برای ۱۵ فرم اول هر فرم <span class="n">$3.10</span>.</td></tr>
+        <tr><td>پایش nexus، گواهی‌های معافیت و گزارش ایالتی</td><td>داخل ماژول <span class="n">$19</span></td><td>QuickBooks و Xero: پایش nexus در فهرست امکاناتشان نیست. Zoho: از طریق اتصال جدای Avalara. TaxJar از ماهی <span class="n">$39</span>؛ Avalara برای هر ایالت ماهی <span class="n">$69</span> تا <span class="n">$79</span>.</td></tr>
+        <tr><td>فاکتور الکترونیکی عمان</td><td>داخل ماژول عمان، به‌ازای هر سند</td><td>FawtaraX ماهی <span class="n">9</span> تا <span class="n">59</span> ریال، به‌عنوان خدمت جدا</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="fa-features" aria-labelledby="fa-h-features">
+  <div class="sec-head"><span class="eyebrow">بررسی‌شده در ۲۳ نوامبر ۲۰۲۶</span><h2 id="fa-h-features">فهرست امکانات رقبا</h2></div>
+  <p>آنچه هر رقیب امروز عرضه می‌کند، از صفحه‌های قیمت و راهنمای خود آن‌ها. قیمت‌ها قیمت رسمی‌اند و تخفیف‌های موقت در آن‌ها نیامده است.</p>
+  <div class="comp-grid">
+    <div class="comp"><h3>QuickBooks Online <small>آمریکا</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>Simple Start <span class="n">$38</span> (۱ کاربر)، Essentials <span class="n">$85</span> (۳)، Plus <span class="n">$140</span> (۵)، Advanced <span class="n">$340</span> (۲۵).</dd>
+      <dt>حسابداری</dt><dd>صدور صورت‌حساب، پیش‌فاکتور و پرداخت قبض در همه‌ی پلن‌ها. چندارزی و تراکنش تکراری از Essentials. سفارش خرید، بودجه، پروژه و موجودی (FIFO یا میانگین متحرک) از Plus. شناسایی درآمد، دارایی ثابت و خودکارسازی گردش کار فقط در Advanced.</dd>
+      <dt>انطباق آمریکا</dt><dd>محاسبه‌ی خودکار مالیات فروش. آماده‌سازی 1099 رایگان؛ ارسال الکترونیکی فقط همراه Bill Pay Premium یا بسته‌های بالاتر. دفتر مسافت، چاپ چک، پرداخت ACH.</dd>
+      <dt>POS و CRM</dt><dd>POS بومی ندارد و خریدار را به Shopify POS ارجاع می‌دهد. مدیریت سرنخ در Plus و Advanced.</dd>
+      <dt>حقوق</dt><dd>افزونه از ماهی <span class="n">$50</span> به‌اضافه‌ی <span class="n">$7</span> برای هر کارمند.</dd>
+      <dt>هوش مصنوعی</dt><dd>عامل‌های Intuit Intelligence و گفت‌وگوی هوش مصنوعی (آزمایشی).</dd>
+      <dt>کشورها</dt><dd>نسخه‌ی جدا برای هر منطقه؛ منطقه‌ی شرکت قابل تغییر نیست.</dd>
+    </dl></div>
+    <div class="comp"><h3>Xero <small>آمریکا</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>Early <span class="n">$27</span>، Growing <span class="n">$59</span>، Established <span class="n">$97</span>؛ کاربر نامحدود.</dd>
+      <dt>حسابداری</dt><dd>پیش‌فاکتور، صورت‌حساب، تطبیق بانکی، سفارش خرید و موجودی (میانگین، تا ۴٬۰۰۰ قلم) در همه‌ی پلن‌ها. چندارزی، پروژه و هزینه‌های کارکنان فقط در Established. دسته‌بندی ردیابی، صورت‌حساب تکراری، تاریخ قفل، ردپای حسابرسی.</dd>
+      <dt>انطباق آمریکا</dt><dd>محاسبه‌ی مالیات فروش از طریق Avalara، بدون ارسال اظهارنامه و بدون پایش nexus. ارسال 1099 برای سال مالیاتی ۲۰۲۶ رایگان. ACH از طریق Melio؛ چاپ چک.</dd>
+      <dt>POS و CRM</dt><dd>POS بومی ندارد. CRM بومی تأیید نشده.</dd>
+      <dt>حقوق</dt><dd>افزونه‌ی Gusto از ماهی <span class="n">$36</span> به‌اضافه‌ی <span class="n">$6</span> برای هر نفر.</dd>
+      <dt>هوش مصنوعی</dt><dd>JAX (Just Ask Xero).</dd>
+      <dt>کشورها</dt><dd>سایت و قیمت جدا برای هر کشور.</dd>
+    </dl></div>
+    <div class="comp"><h3>Zoho Books <small>آمریکا</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>رایگان؛ Standard <span class="n">$20</span> (۳ کاربر)؛ Professional <span class="n">$50</span> (۵)؛ Premium <span class="n">$70</span> (۱۰)؛ Elite <span class="n">$150</span>؛ Ultimate <span class="n">$275</span>.</dd>
+      <dt>حسابداری</dt><dd>پیش‌فاکتور، صورت‌حساب تکراری و تطبیق بانکی از پلن رایگان. قبض، سفارش خرید، چندارزی، موجودی (FIFO یا میانگین موزون)، پروژه و تأییدها از Professional. بودجه، دارایی ثابت و شناسایی درآمد پایه از Premium.</dd>
+      <dt>انطباق آمریکا</dt><dd>محاسبه‌ی خودکار مالیات فروش؛ ارسال اظهارنامه و nexus از طریق اتصال جدای Avalara. گواهی معافیت برای هر مشتری. ارسال 1099 از طریق Tax1099. دفتر مسافت. ACH با افزونه‌ی BillPay ماهی <span class="n">$59</span> تا <span class="n">$69</span>.</dd>
+      <dt>POS و CRM</dt><dd>محصولات جدا: Zoho POS از <span class="n">$15</span> برای هر شعبه، و Zoho CRM.</dd>
+      <dt>حقوق</dt><dd>محصول جدا از ماهی <span class="n">$39</span> به‌اضافه‌ی <span class="n">$6</span> برای هر کارمند.</dd>
+      <dt>هوش مصنوعی</dt><dd>دستیارها و عامل‌های Zia.</dd>
+      <dt>کشورها</dt><dd>نسخه‌ی کشوری؛ کشور و ارز پایه قابل تغییر نیست.</dd>
+    </dl></div>
+    <div class="comp"><h3>Zoho Books <small>عمان</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>Standard با پرداخت سالانه <span class="n">$15</span> یا ماهانه <span class="n">$18</span> (۳ کاربر)، تا Ultimate <span class="n">$249</span>.</dd>
+      <dt>مالیات عمان</dt><dd>اظهارنامه‌ی مالیات بر ارزش افزوده از Standard؛ چاپ صورت‌حساب به عربی.</dd>
+      <dt>Fawtara</dt><dd>فقط از طریق اتصال شخص ثالث.</dd>
+      <dt>حقوق</dt><dd>محصول جدای Zoho Payroll با WPS، صندوق حمایت اجتماعی و پایان خدمت، ماهی <span class="n">$10</span> تا <span class="n">$20</span>.</dd>
+      <dt>POS و CRM</dt><dd>محصولات جدا؛ Zoho POS در اوت ۲۰۲۶ در عمان عرضه شد.</dd>
+    </dl></div>
+    <div class="comp"><h3>Wafeq <small>عمان</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>Starter <span class="n">12 OMR</span> (۲ کاربر)، Plus <span class="n">15 OMR</span> (۵)، Premium <span class="n">25 OMR</span> (۲۰).</dd>
+      <dt>مالیات عمان</dt><dd>اظهارنامه‌ی مالیات بر ارزش افزوده در قالب سازمان مالیات؛ صورت‌حساب دوزبانه با QR.</dd>
+      <dt>Fawtara</dt><dd>در صفحه‌های عمان اشاره‌ای به آن نشده.</dd>
+      <dt>حسابداری</dt><dd>FIFO یا میانگین موزون، تطبیق بانکی با هوش مصنوعی و چندارزی در همه‌ی پلن‌ها. پروژه از Plus. موجودی، انبارها، دارایی ثابت و تأییدها در Premium.</dd>
+      <dt>POS و حقوق</dt><dd>POS بومی ندارد (اتصال به Foodics). حقوق عمومی در Premium.</dd>
+    </dl></div>
+    <div class="comp"><h3>Odoo <small>بسته‌ی عمان</small></h3><dl>
+      <dt>قیمت</dt><dd>Standard در عمان حدود <span class="n">$7.25</span> برای هر کاربر در ماه با پرداخت سالانه (در آمریکا <span class="n">$24.90</span>)؛ همه‌ی اپ‌ها.</dd>
+      <dt>مالیات عمان</dt><dd>گزارش مالیات بر ارزش افزوده در قالب اظهارنامه‌ی عمان، معکوس، صورت‌حساب عربی و انگلیسی.</dd>
+      <dt>Fawtara</dt><dd>فقط از طریق ماژول‌های شخص ثالث.</dd>
+      <dt>حقوق</dt><dd>بسته‌ی عمان با فایل WPS، صندوق حمایت اجتماعی و پاداش پایان خدمت.</dd>
+      <dt>عملیات</dt><dd>POS، CRM، موجودی (میانگین یا FIFO) و تولید، همه بومی. چندشرکتی در پلن Custom.</dd>
+      <dt>کشورها</dt><dd>یک محصول با بسته‌های محلی‌سازی.</dd>
+    </dl></div>
+    <div class="comp"><h3>FawtaraX <small>عمان</small></h3><dl>
+      <dt>پلن‌ها</dt><dd>ماهی <span class="n">9</span>، <span class="n">29</span> و <span class="n">59 OMR</span> برای ۵۰، ۵۰۰ و ۱٬۰۰۰ صورت‌حساب.</dd>
+      <dt>دامنه</dt><dd>فقط فاکتور الکترونیکی: قالب دوزبانه، QR، Peppol PINT OM. می‌گوید از سازمان مالیات اعتبار گرفته است.</dd>
+      <dt>ندارد</dt><dd>دفتر کل، اظهارنامه‌ی مالیات بر ارزش افزوده و حقوق.</dd>
+    </dl></div>
+  </div>
+  <p class="small muted">طبق تصمیم وزارتی ۱۸۹/۲۰۲۶، فاکتور الکترونیکی Fawtara از ۱ آوریل ۲۰۲۷ برای کسب‌وکارهای با عرضه‌ی سالانه‌ی بیش از ۵ میلیون ریال و از ۱ اکتبر ۲۰۲۷ برای بقیه اجباری می‌شود. اعتبار رسمی فقط برای ارائه‌دهندگان خدمات فاکتور الکترونیکی است، نه برای نرم‌افزار حسابداری.</p>
+</section>
+
+<section id="fa-edge" aria-labelledby="fa-h-edge">
+  <div class="sec-head"><span class="eyebrow">پس از پایان پروژه</span><h2 id="fa-h-edge">آنچه OctaBiz دارد و رقبا ندارند</h2></div>
+  <div class="tbl mx">
+    <table>
+      <thead><tr><th>قابلیت</th><th>OctaBiz</th><th>QuickBooks Online</th><th>Xero</th><th>Zoho Books</th><th>Odoo</th><th>Wafeq</th></tr></thead>
+      <tbody>
+        <tr><td>ثبت فروش POS در همان دفتر کل</td><td class="y">بله، حتی فروش آفلاین</td><td class="nl">POS بومی ندارد</td><td class="nl">POS بومی ندارد</td><td>محصول جدا</td><td>بله</td><td>اتصال (Foodics)</td></tr>
+        <tr><td>CRM در همان محصول</td><td class="y">بله</td><td>مدیریت سرنخ از Plus (<span class="n">$140</span>)</td><td class="nl">تأیید نشده</td><td>محصول جدا</td><td>بله</td><td class="nl">تأیید نشده</td></tr>
+        <tr><td>شناسایی درآمد (ASC 606)</td><td class="y">بله؛ هوش مصنوعی قرارداد را می‌خواند</td><td>فقط Advanced (<span class="n">$340</span>)</td><td class="nl">تأیید نشده</td><td>از Premium (<span class="n">$70</span>)</td><td class="nl">بررسی نشده</td><td class="nl">در فهرست نیست</td></tr>
+        <tr><td>دارایی ثابت با استهلاک مالیاتی آمریکا (MACRS، بند ۱۷۹، استهلاک ویژه)</td><td class="y">بله</td><td>دارایی ثابت در Advanced (<span class="n">$340</span>)</td><td>دارایی ثابت</td><td>دارایی ثابت از Premium (<span class="n">$70</span>)</td><td>دارایی ثابت</td><td>دارایی ثابت در Premium</td></tr>
+        <tr><td>پایش nexus مالیات فروش</td><td class="y">بله، در US Accounting</td><td class="nl">در فهرست نیست</td><td class="nl">پایش nexus ندارد</td><td>اتصال جدای Avalara</td><td class="nl">بررسی نشده</td><td class="nl">مربوط نیست</td></tr>
+        <tr><td>دفتر گواهی‌های معافیت</td><td class="y">بله، در US Accounting</td><td class="nl">در فهرست نیست</td><td class="nl">نگهداری گواهی در فهرست نیست</td><td>برای هر مشتری</td><td class="nl">بررسی نشده</td><td class="nl">مربوط نیست</td></tr>
+        <tr><td>کالای امانی نزد مشتری و کالای امانی دریافتی</td><td class="y">بله، با تسویه با مالک</td><td class="nl">در فهرست نیست</td><td class="nl">در فهرست نیست</td><td class="nl">در فهرست نیست</td><td class="nl">بررسی نشده</td><td class="nl">در فهرست نیست</td></tr>
+        <tr><td>تولید (فهرست مواد، دستور کار) و بهای تمام‌شده‌ی واردات</td><td class="y">بله</td><td class="nl">در فهرست نیست</td><td class="nl">در فهرست نیست</td><td class="nl">در فهرست نیست</td><td>بله</td><td class="nl">در فهرست نیست</td></tr>
+        <tr><td>معاملات بین‌شرکتی و تلفیق</td><td class="y">بله</td><td>محصول جدا (Intuit Enterprise Suite)</td><td class="nl">در فهرست نیست</td><td class="nl">در فهرست نیست</td><td>چندشرکتی در پلن Custom</td><td class="nl">در فهرست نیست</td></tr>
+        <tr><td>حقوق عمان در همان محصول (صندوق حمایت اجتماعی، پایان خدمت، WPS)</td><td class="y">بله</td><td class="nl">مربوط نیست</td><td class="nl">مربوط نیست</td><td>محصول جدا</td><td>بله</td><td class="nl">تأیید نشده</td></tr>
+        <tr><td>صورت‌حساب مالیاتی دوزبانه‌ی عربی و انگلیسی</td><td class="y">بله</td><td class="nl">مربوط نیست</td><td class="nl">مربوط نیست</td><td>چاپ عربی</td><td>بله</td><td>بله، با QR</td></tr>
+        <tr><td>فاکتور الکترونیکی Fawtara داخل خود محصول</td><td class="y">بله، از طریق ارائه‌دهنده‌ی معتبر</td><td class="nl">مربوط نیست</td><td class="nl">مربوط نیست</td><td>اتصال شخص ثالث</td><td>ماژول شخص ثالث</td><td class="nl">اشاره‌ای نشده</td></tr>
+        <tr><td>انطباق آمریکا و عمان روی یک هسته</td><td class="y">بله، به شکل ماژول کشوری</td><td>نسخه‌ی جدا برای هر منطقه</td><td>سایت جدا برای هر کشور</td><td>نسخه‌ی جدا برای هر کشور</td><td>بسته‌ی محلی‌سازی</td><td>سایت‌های کشورهای خلیج فارس</td></tr>
+      </tbody>
+      <caption>از صفحه‌های قیمت و راهنمای هر شرکت، ۲۳ نوامبر ۲۰۲۶. «در فهرست نیست» یا «تأیید نشده»: در فهرست امکانات منتشرشده‌ی آن شرکت دیده نمی‌شود. «بررسی نشده»: بیرون از این بررسی. «مربوط نیست»: آن محصول در آن بازار فعال نیست.</caption>
+    </table>
+  </div>
+  <div class="panel">
+    <h3>قابلیت‌های دیگر OctaBiz</h3>
+    <ul class="plain">
+      <li>هر تغییری که دستیار هوش مصنوعی انجام دهد ثبت می‌شود و با یک قدم برمی‌گردد.</li>
+      <li>یادآوری وصول مطالبات با هوش مصنوعی، از جمله تماس صوتی، و بررسی شبانه‌ی سلامت دفاتر با پنج آزمون آماری ناهنجاری.</li>
+      <li>تفکیک انحراف قیمت خرید طبق IAS 2، و تقسیم بهای تمام‌شده‌ی واردات بین موجودی در انبار و کالای فروخته‌شده.</li>
+      <li>بستن خودکار روزانه که با نوشتن دلیل قابل عبور است، در کنار تاریخ‌های قفل برای فروش، خرید و مالیات.</li>
+      <li>صورت‌حساب مالک برای کالای امانی با مالیات بر ارزش افزوده، همراه با خرید و تسویه.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="fa-tech" aria-labelledby="fa-h-tech">
+  <div class="sec-head"><span class="eyebrow">ساختار فنی</span><h2 id="fa-h-tech">تحلیل فنی ماژول حسابداری</h2></div>
+  <p>ماژول حسابداری، بخش به بخش. پشت هر مورد کد فعال روی production قرار دارد.</p>
+  <div class="tech-grid">
+    <div class="tech lead-card"><h3>معماری کشوری (همین به‌روزرسانی)</h3><ul>
+      <li>هسته‌ی مستقل از کشور. کشور کسب‌وکار تعیین می‌کند کدام قاعده‌ها اجرا شوند؛ ماژول امکانات پولی را باز می‌کند.</li>
+      <li>یک تعریف برای هر ماژول، با بررسی خودکار. هر کسب‌وکار یک کشور، با اعمال در خود پایگاه داده.</li>
+      <li>ماژول‌هایی که برای مشتریان فعلی هدیه شده‌اند روشن می‌مانند. اگر سرور پاسخ ندهد، صفحه‌ها به قاعده‌ی کشور برمی‌گردند.</li>
+      <li>بازار تازه یعنی یک تعریف ماژول تازه و محتوای آن، نه نسخه‌ی تازه‌ای از محصول.</li>
+    </ul></div>
+    <div class="tech"><h3>یک دفتر کل برای کل کسب‌وکار</h3><ul>
+      <li>صندوق فروش، OctaShop، WooCommerce، Square و Stripe فروش، مرجوعی، انعام و تسویه‌ها را در همان دفاتر ثبت می‌کنند.</li>
+      <li>فروش آفلاین POS در صف می‌ماند و با برگشتن اتصال فقط یک بار ثبت می‌شود، تا ۱۴ روز عقب.</li>
+      <li>پایگاه داده جلوی دوبار ثبت شدن پرداختی را که از QuickBooks، Plaid، Square یا Stripe می‌آید می‌گیرد.</li>
+    </ul></div>
+    <div class="tech"><h3>کنترل‌هایی که پایگاه داده نگه می‌دارد</h3><ul>
+      <li>قبض ثبت‌شده قابل ویرایش نیست و دوره‌ی بسته سند تازه نمی‌پذیرد.</li>
+      <li>تاریخ قفل برای هر بخش با استثنای زمان‌دار، به‌اضافه‌ی بستن خودکار روزانه.</li>
+      <li>ردپای حسابرسی روی همه‌ی جدول‌هایی که پول در آن‌هاست. ورود دومرحله‌ای، اگر کسب‌وکار بخواهد، به دفاتر هم می‌رسد.</li>
+      <li>تأیید چندمرحله‌ای برای قبض، پرداخت و اعلامیه‌ی بستانکار، با تفکیک وظایف.</li>
+    </ul></div>
+    <div class="tech"><h3>مالیات</h3><ul>
+      <li>نرخ، نهاد، کد و گروه مالیاتی، با نرخ‌های تاریخ‌دار.</li>
+      <li>آمریکا: مالیات مصرف، کسر مالیات پشتیبان، nexus اقتصادی، گواهی معافیت، مالیات فروش به تفکیک ایالت، و نگاشت سطرهای اظهارنامه برای Schedule C، 1065، 1120 و 1120-S. یک رابط Stripe Tax می‌تواند جای موتور داخلی را بگیرد.</li>
+      <li>عمان و خلیج فارس: سرفصل حساب‌های کشور، درصد مالیات قابل استرداد برای هر قبض، صورت‌حساب مالیاتی دوزبانه.</li>
+    </ul></div>
+    <div class="tech"><h3>موجودی و بهای تمام‌شده</h3><ul>
+      <li>میانگین موزون متحرک؛ بچ و تاریخ انقضا با برداشت از نزدیک‌ترین انقضا.</li>
+      <li>تقسیم بهای واردات بین موجودی و کالای فروخته‌شده؛ اقل بهای تمام‌شده و خالص ارزش فروش؛ تفکیک انحراف قیمت طبق IAS 2.</li>
+      <li>فهرست مواد و دستور کار به بهای واقعی. موجودی چندشعبه و چندانبار با برچسب شعبه روی سطرهای سند، و فرایندی که دفتر کل را با انبار تطبیق می‌دهد.</li>
+    </ul></div>
+    <div class="tech"><h3>دریافتنی‌ها و پرداختنی‌ها</h3><ul>
+      <li>پیش‌فاکتور با صورت‌حساب مرحله‌ای، صورت‌حساب تکراری با شارژ خودکار، پیش‌دریافت، لینک پرداخت، تخفیف پرداخت زودهنگام، درگاه مشتری.</li>
+      <li>درخواست خرید، استعلام قیمت، سفارش خرید، دریافت کالا، مرجوعی به فروشنده، سفارش EDI، خواندن قبض با OCR، درگاه فروشنده، پرداخت زمان‌بندی‌شده و گروهی، چک، فایل ACH، فرم 1099 و درخواست W-9.</li>
+      <li>کالای امانی نزد مشتری و کالای امانی دریافتی با تسویه با مالک.</li>
+    </ul></div>
+    <div class="tech"><h3>بستن دوره، گزارش‌ها و حسابداری پیشرفته</h3><ul>
+      <li>فضای بستن دوره با کار، مانع و امضا، و راهنمای سال مالی.</li>
+      <li>سود و زیان، ترازنامه، جریان وجوه نقد، تغییرات حقوق صاحبان سهام، دفتر کل، سنی‌بندی، و تراز آزمایشی تعهدی یا نقدی با مقایسه. بودجه بر اساس ابعاد.</li>
+      <li>معاملات بین‌شرکتی و تلفیق، قراردادهای شناسایی درآمد، درآمد و هزینه‌ی انتقالی، اجاره، وام، پیش‌بینی نقدینگی، سودآوری پروژه و کار در جریان، و دارایی ثابت با استهلاک دفتری و مالیاتی.</li>
+    </ul></div>
+    <div class="tech"><h3>هوش مصنوعی داخل دفاتر</h3><ul>
+      <li>Ask AI روی صفحه‌ی باز کار می‌کند، مثلاً صورت‌حساب را پر می‌کند.</li>
+      <li>هر تغییر هوش مصنوعی ثبت می‌شود و برگشت‌پذیر است. تطبیق بانکی میزان اطمینان و دلیلش را نشان می‌دهد.</li>
+      <li>خواندن رسید با OCR و صندوق اسناد ایمیلی، عامل وصول مطالبات با تماس صوتی، بررسی شبانه‌ی ناهنجاری، و خواندن قرارداد برای شناسایی درآمد.</li>
+    </ul></div>
+    <div class="tech"><h3>حسابداران و حقوق</h3><ul>
+      <li>نقش حسابدار، نمایش فقط‌خواندنی دفاتر، میز کار چندمشتری برای حسابدار و بسته‌ی پایان سال برای CPA.</li>
+      <li>انتقال دفاتر از QuickBooks، Xero یا Excel.</li>
+      <li>حقوق عمان با سهم صندوق حمایت اجتماعی و ذخیره‌ی پایان خدمت، ثبت‌شده در دفتر کل.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="fa-adv" aria-labelledby="fa-h-adv">
+  <div class="sec-head"><span class="eyebrow">پس از پایان پروژه</span><h2 id="fa-h-adv">مزیت‌های رقابتی</h2></div>
+  <div class="list">
+    <div class="item"><span class="k">۱</span><div><h3>پایین‌ترین قیمت ورودی در آمریکا، و یک مجموعه‌ی کامل در عمان</h3><p>در آمریکا، حسابداری با ماژول آمریکا ماهی <span class="n">$19</span> است: پایین‌تر از Zoho Books (<span class="n">$20</span>)، Xero (<span class="n">$27</span>) و QuickBooks Online (<span class="n">$38</span>). پلن Core با ماژول <span class="n">$57</span> است، یک‌سوم کمتر از QuickBooks Online Essentials (<span class="n">$85</span>)، و POS، موجودی و CRM را هم دارد. در عمان قیمت ما پایین‌تر از Wafeq (۱۲ ریال، حدود <span class="n">$31</span>) و FawtaraX است که فقط فاکتور الکترونیکی می‌دهد.</p></div></div>
+    <div class="item"><span class="k">۲</span><div><h3>عملیات و انطباق روی یک دفتر</h3><p>فروش در صندوق، جابه‌جایی موجودی و مالیات آن در همان دفاتری ثبت می‌شود که ماژول انطباق از آن گزارش می‌گیرد. QuickBooks و Xero POS بومی ندارند، Zoho POS و CRM را به شکل محصولات جدا می‌فروشد، و Wafeq و FawtaraX فقط حسابداری یا فقط فاکتور الکترونیکی را پوشش می‌دهند.</p></div></div>
+    <div class="item"><span class="k">۳</span><div><h3>معماری کشوری سازمان‌های بزرگ با قیمت کسب‌وکار کوچک</h3><p>یک هسته‌ی مستقل و هر کشور یک ماژول؛ همان ساختار Odoo، NetSuite و Microsoft Business Central. QuickBooks، Xero و Zoho برای هر کشور یک نسخه‌ی جدا نگه می‌دارند. برای OctaBiz هر بازار تازه فقط یک ماژول تازه روی همان محصول است.</p></div></div>
+    <div class="item"><span class="k">۴</span><div><h3>شرایط مشتری‌محور در خود محصول</h3><p>پرداخت هرگز محاسبه‌ی عددی را تغییر نمی‌دهد، ماژول پرداخت‌نشده فقط‌خواندنی می‌شود و دفاتر سالم می‌ماند، و مشتریانی که پیش از راه‌اندازی با ما بودند ماژول را برای همیشه رایگان دارند. این شرایط را خود سیستم اعمال می‌کند.</p></div></div>
+    <div class="item"><span class="k">۵</span><div><h3>انطباق مالیات فروش آمریکا در خود ماژول</h3><p>پایش nexus، دفتر گواهی‌های معافیت و گزارش مالیات فروش به تفکیک ایالت داخل ماژول <span class="n">$19</span> است. QuickBooks و Xero پایش nexus را در فهرست امکاناتشان ندارند و Zoho برای آن به اتصال جدای Avalara نیاز دارد. فرم 1099 هم با <span class="n">$2</span> برای هر فرم ارسال می‌شود.</p></div></div>
+    <div class="item"><span class="k">۶</span><div><h3>Fawtara داخل محصول، پیش از مهلت‌های ۲۰۲۷</h3><p>فاکتور الکترونیکی در عمان از ۱ آوریل ۲۰۲۷ برای کسب‌وکارهای بزرگ و از ۱ اکتبر ۲۰۲۷ برای بقیه اجباری می‌شود. Zoho Books، Odoo و Wafeq پشتیبانی Fawtara از خودشان ندارند و به اتصال‌های شخص ثالث تکیه می‌کنند یا اشاره‌ای به آن نکرده‌اند. در OctaBiz اظهارنامه‌ی مالیات بر ارزش افزوده، صورت‌حساب دوزبانه، فایل WPS، گزارش صندوق حمایت اجتماعی و فاکتور الکترونیکی Fawtara همه داخل همان سیستمی است که فروشگاه را می‌گرداند.</p></div></div>
+  </div>
+</section>
+
+<section id="fa-map" aria-labelledby="fa-h-map">
+  <div class="sec-head"><span class="eyebrow">پس از پایان پروژه</span><h2 id="fa-h-map">جایگاه در بازار</h2></div>
+  <figure>
+    <div class="map">
+      <svg viewBox="0 0 660 330" role="img" aria-labelledby="fa-map-t fa-map-d">
+        <title id="fa-map-t">قیمت ورودی در برابر گستره‌ی محصول</title>
+        <desc id="fa-map-d">OctaBiz با ۱۹ دلار در ردیف عملیات کامل است. Odoo با ۲۴٫۹۰ دلار برای هر کاربر در همان ردیف است. Zoho با ۲۰، Xero با ۲۷ و QuickBooks با ۳۸ دلار محصولات حسابداری‌محورند. Wafeq با حدود ۳۱ دلار حسابداری و صدور صورت‌حساب را پوشش می‌دهد.</desc>
+        <rect class="m-band" x="80" y="20" width="560" height="80"/><rect class="m-band" x="80" y="200" width="560" height="80"/>
+        <line class="m-grid" x1="80" y1="100" x2="640" y2="100"/><line class="m-grid" x1="80" y1="200" x2="640" y2="200"/>
+        <line class="m-grid" x1="220" y1="20" x2="220" y2="280"/><line class="m-grid" x1="360" y1="20" x2="360" y2="280"/><line class="m-grid" x1="500" y1="20" x2="500" y2="280"/>
+        <line class="m-axis" x1="80" y1="280" x2="640" y2="280"/><line class="m-axis" x1="80" y1="20" x2="80" y2="280"/>
+        <text class="m-band-label fa" x="632" y="38" text-anchor="end" direction="rtl">عملیات کامل: حسابداری، POS، موجودی، CRM</text>
+        <text class="m-band-label fa" x="632" y="118" text-anchor="end" direction="rtl">حسابداری‌محور، عملیات از طریق محصولات دیگر</text>
+        <text class="m-band-label fa" x="632" y="218" text-anchor="end" direction="rtl">فقط حسابداری و صدور صورت‌حساب</text>
+        <text class="m-tick" x="80" y="298" text-anchor="middle">$0</text><text class="m-tick" x="220" y="298" text-anchor="middle">$10</text><text class="m-tick" x="360" y="298" text-anchor="middle">$20</text><text class="m-tick" x="500" y="298" text-anchor="middle">$30</text><text class="m-tick" x="640" y="298" text-anchor="end">$40</text>
+        <text class="m-band-label fa" x="360" y="322" text-anchor="middle" direction="rtl">قیمت ورودی ماهانه با الزامات کشوری (دلار)</text>
+        <circle class="m-dot ours" cx="346" cy="68" r="8"/><text class="m-label ours" x="346" y="90" text-anchor="middle">OctaBiz</text>
+        <circle class="m-dot" cx="428.6" cy="68" r="7"/><text class="m-label" x="440" y="62">Odoo (per user)</text>
+        <circle class="m-dot" cx="360" cy="150" r="7"/><text class="m-label" x="360" y="174" text-anchor="middle">Zoho Books</text>
+        <circle class="m-dot" cx="458" cy="150" r="7"/><text class="m-label" x="458" y="174" text-anchor="middle">Xero</text>
+        <circle class="m-dot" cx="612" cy="150" r="7"/><text class="m-label" x="612" y="174" text-anchor="middle">QuickBooks</text>
+        <circle class="m-dot" cx="516.8" cy="240" r="7"/><text class="m-label" x="516.8" y="264" text-anchor="middle">Wafeq</text>
+      </svg>
+    </div>
+    <figcaption>جای افقی هر محصول از قیمت رسمی آمریکا و روی یک مقیاس است؛ قیمت Wafeq از ریال تبدیل شده. ردیف‌های عمودی دامنه‌ی هر محصول را نشان می‌دهند. قیمت Odoo به‌ازای هر کاربر و بسته به کشور است.</figcaption>
+  </figure>
+  <p class="statement">پس از پایان پروژه، OctaBiz کم‌هزینه‌ترین راه برای یک کسب‌وکار کوچک آمریکایی خواهد بود تا عملیاتش را اداره کند و با قانون منطبق بماند، همه از یک سیستم؛ و در عمان، در میان محصولات بررسی‌شده، تنها محصولی است که فروشگاه را می‌گرداند، دفاتر را نگه می‌دارد و فاکتور الکترونیکی Fawtara را بدون اتصال شخص ثالث ارسال می‌کند.</p>
+</section>
+
+<section id="fa-opp" aria-labelledby="fa-h-opp">
+  <div class="sec-head"><span class="eyebrow">با قیمت ما</span><h2 id="fa-h-opp">فرصت‌های بازار</h2></div>
+  <div class="list">
+    <div class="item"><span class="k">۱</span><div><h3>مشتریان QuickBooks پس از افزایش قیمت ۲۰۲۶</h3><p>QuickBooks Online قیمت پلن‌های Essentials، Plus و Advanced را در اوت ۲۰۲۶ بالا برد. OctaBiz همان انطباق آمریکا را با نصف قیمت ورودی (<span class="n">$19</span> در برابر <span class="n">$38</span>) و یک‌سوم کمتر در سطح کسب‌وکار در حال رشد (<span class="n">$57</span> در برابر <span class="n">$85</span>) می‌دهد، با POS، موجودی و CRM.</p></div></div>
+    <div class="item"><span class="k">۲</span><div><h3>کسب‌وکارهایی که برای چند ابزار پول می‌دهند</h3><p>فروشگاهی که جدا برای حسابداری، POS، خدمت ارسال 1099 و پایش مالیات فروش پول می‌دهد، می‌تواند به یک اشتراک و یک دفتر منتقل شود.</p></div></div>
+    <div class="item"><span class="k">۳</span><div><h3>فروشندگان آمریکایی که از آستانه‌ی ایالت‌ها عبور می‌کنند</h3><p>کسب‌وکاری که به ایالت‌های دیگر هم می‌فروشد باید nexus اقتصادی را پایش کند و گواهی‌های معافیت را نگه دارد. QuickBooks و Xero پایش nexus را در فهرست امکاناتشان ندارند و خدمات مستقل از ماهی <span class="n">$39</span> شروع می‌شوند. در OctaBiz هر دو داخل ماژول <span class="n">$19</span> است.</p></div></div>
+    <div class="item"><span class="k">۴</span><div><h3>مهلت‌های فاکتور الکترونیکی عمان</h3><p>Fawtara از ۱ آوریل ۲۰۲۷ برای کسب‌وکارهای بالای ۵ میلیون ریال و از ۱ اکتبر ۲۰۲۷ برای بقیه اجباری می‌شود؛ پس هر کسب‌وکار ثبت‌شده در مالیات بر ارزش افزوده در عمان باید ظرف یک سال آینده سیستم منطبق انتخاب کند. محصولات اصلی حسابداری فقط از طریق اتصال‌های شخص ثالث به Fawtara می‌رسند و FawtaraX فقط برای فاکتور الکترونیکی ماهی ۹ تا ۵۹ ریال می‌گیرد. OctaBiz Core با ماژول عمان، حدود ۲۲ ریال، فروشگاه، دفاتر، اظهارنامه و فاکتور الکترونیکی را با هم پوشش می‌دهد.</p></div></div>
+    <div class="item"><span class="k">۵</span><div><h3>انجام کار VAT در خود کسب‌وکار</h3><p>کسب‌وکارهای کوچک عمانی که ماهی ۳۰۰ تا ۷۰۰ ریال برای حسابداری برون‌سپاری‌شده‌ی VAT می‌پردازند، می‌توانند اظهارنامه را خودشان با ماهی ۷٫۳ تا ۲۲ ریال آماده کنند.</p></div></div>
+    <div class="item"><span class="k">۶</span><div><h3>اولین قدم پولی برای کاربران رایگان</h3><p>کاربران پلن رایگان Books می‌توانند با ماهی <span class="n">$19</span> دقیقاً همان چیزی را بخرند که قانون کشورشان لازم دارد.</p></div></div>
+    <div class="item"><span class="k">۷</span><div><h3>بازارهای تازه به شکل ماژول</h3><p>هر کشور بعدی یک ماژول تازه روی همان هسته است، پس گسترش، درآمد اضافه می‌کند بی‌آن‌که محصول تازه‌ای ساخته شود.</p></div></div>
+  </div>
+  <div class="figs" aria-label="نمونه‌ی درآمد ماژول">
+    <div class="fig"><span class="v">$1,900</span><span class="l">درآمد تکرارشونده‌ی ماهانه برای هر ۱۰۰ مشترک ماژول</span></div>
+    <div class="fig"><span class="v">$9,500</span><span class="l">در ماه با ۵۰۰ مشترک</span></div>
+    <div class="fig"><span class="v">$228,000</span><span class="l">در سال با ۱٬۰۰۰ مشترک با پرداخت ماهانه</span></div>
+  </div>
+  <p class="small muted">ارقام درآمد حاصل‌ضرب ساده‌ی قیمت ماهانه‌ی ۱۹ دلار است و برای نشان دادن مقیاس آمده.</p>
+  <details class="src">
+    <summary>منابع قیمت (نوامبر ۲۰۲۶)</summary>
+    <ul>
+      <li><a href="https://www.nerdwallet.com/article/small-business/quickbooks-pricing">NerdWallet: QuickBooks pricing 2026</a></li>
+      <li><a href="https://www.xero.com/us/pricing/">Xero US pricing</a></li>
+      <li><a href="https://www.capterra.com/p/163115/Zoho-Books/pricing/">Capterra: Zoho Books pricing</a></li>
+      <li><a href="https://support.taxjar.com/article/1074-taxjar-pricing-details">TaxJar pricing</a> · <a href="https://www.avalara.com/us/en/blog/avalara-select-sales-tax-pricing-small-businesses.html">Avalara sales tax pricing</a> · <a href="https://www.avalara.com/us/en/products/1099/pricing.html">Avalara 1099 pricing</a></li>
+      <li><a href="https://beancount.io/blog/2026/10/18/1099-filing-software-track1099-vs-tax1099-vs-iris-guide">Track1099, Tax1099 and IRIS compared</a></li>
+      <li><a href="https://www.wafeq.com/en-om/pricing">Wafeq Oman pricing</a> · <a href="https://sanadservice.com/en/guides/accounting-software-oman/">Sanad: accounting software in Oman</a> · <a href="https://joinsumu.com/blog/best-e-invoicing-software-oman-compared">Sumu: e-invoicing in Oman</a></li>
+      <li><a href="https://www.pwc.com/m1/en/services/tax/middle-east-tax-news-alerts/2026/oman-e-invoicing-implementation-developments.html">PwC: Oman e-invoicing developments 2026</a></li>
+    </ul>
+  </details>
+</section>
+
+<footer>گزارش هیئت مدیره‌ی حسابداری کشوری · ۲۳ نوامبر ۲۰۲۶</footer>
+</article>
+</div>
+
+<script>
+(function () {
+  var en = document.getElementById('en'), fa = document.getElementById('fa');
+  var swEn = document.getElementById('sw-en'), swFa = document.getElementById('sw-fa');
+  function show() {
+    var isFa = /^#fa/.test(location.hash);
+    en.hidden = isFa; fa.hidden = !isFa;
+    swEn.setAttribute('aria-current', String(!isFa));
+    swFa.setAttribute('aria-current', String(isFa));
+    document.documentElement.lang = isFa ? 'fa' : 'en';
+  }
+  window.addEventListener('hashchange', show);
+  show();
+})();
+</script>
+</body>
+</html>
